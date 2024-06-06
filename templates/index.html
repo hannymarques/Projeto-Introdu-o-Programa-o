@@ -1,0 +1,19 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<h1>Glossário</h1>
+<table class="table table-striped table-responsive table-bordered"></table>
+<thead class="thead-default"></thead>
+{% for termo in glossario_de_termos %}
+['Curso técnico em Informática', 'Definição do Curso técnico em Informática']
+<tr>
+    <th scope="row">{{ loop.index}}</th>
+    <td>{{ termo[0] }}</td>
+     <td>{{ termo[1] }}</td>
+</tr>
+<h2>Olá, seja bem vindo(a)! Nossa plataforma oferece cursos básicos para mentes brilhantes e que tem um grande potencial na área tecnológica</h2>
+<a href="/sobre-equipe">Próxima página</a>
+
+
+{% endfor %}
+
+{% endblock %}
